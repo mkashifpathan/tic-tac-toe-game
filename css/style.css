@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+header {
+    background-color: rgb(19, 19, 19);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 0 5px rgb(66, 66, 66);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: 900;
+    font-style: italic;
+    text-shadow: 0 0 5px rgb(0, 255, 0);
+}
+
+header .winner-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(0, 255, 0);
+    text-shadow: 0 0 5px rgb(0, 255, 0);
+}
+
+header .winner-container .winner-players div span {
+    color: rgb(0, 255, 0);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+main .container {
+    text-align: center;
+}
+
+main .container .game {
+    background-color: rgb(11, 11, 11);
+    max-width: 400px;
+    height: 400px;
+    min-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 10px;
+    padding: 20px;
+    grid-template-columns: auto auto auto;
+}
+
+main .container .game .box {
+    height: 31%;
+    width: 31%;
+    font-size: 35px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    border: none;
+}
+
+main .container .reset-game-btn {
+    background-color: rgb(19, 19, 19);
+    padding: 5px 10px;
+    font-size: 20px;
+    color: rgb(253, 144, 144);
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0 0 5px rgb(253, 144, 144);
+    cursor: pointer;
+}
