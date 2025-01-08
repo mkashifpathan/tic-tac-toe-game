@@ -14,8 +14,8 @@
         <div class="winner-container">
             <div class="win">Total Won Games</div>
             <div class="winner-players">
-                <div class="player-o">Player O: <span>10</span></div>
-                <div class="player-x">Player X: <span>10</span></div>
+                <div>Player O: <span id="playerO">0</span></div>
+                <div>Player X: <span id="playerX">0</span></div>
             </div>
         </div>
     </header>
@@ -34,7 +34,14 @@
                 <button class="box"></button>
                 <button class="box"></button>
             </div>
-            <button class="reset-game-btn">Reset</button>
+            <button class="reset-game-btn" id="resetBtn">Reset</button>
+        </div>
+
+        <div class="show-winner-container hide">
+            <div class="show-winner">
+                <div class="winner-text">PLAYER <span>O</span> Wins</div>
+                <button class="play-again-btn" id="newGameBtn">Play Again</button>
+            </div>
         </div>
     </main>
 
